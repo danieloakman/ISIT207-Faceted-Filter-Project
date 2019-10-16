@@ -146,7 +146,6 @@ function loadSidebar (filteredItems = null) {
     legend.innerHTML = key;
     fieldset.appendChild(legend);
     fieldset.id = `${key}-${type}`;
-
     
     switch (type) {
       case 'String':
