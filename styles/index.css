@@ -1,0 +1,140 @@
+html {
+  /* height: 105%; */
+  font-family: Arial;
+}
+
+body {
+  display: flex;
+  flex: 1;
+  /* height: 105%; */
+  justify-content: center;
+  background-image: linear-gradient(to bottom right, #ffffff, #003281);
+}
+
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  /* flex: 4; */
+  border: 3px solid #fff;
+  border-radius: 10px;
+  /* width: 20%; */
+  margin-right: 10px;
+  padding: 10px;
+  background-color: #f8f8f8;
+  /* overflow-wrap: hidden; */
+  height: 100%;
+}
+
+#mainView {
+  display: flex;
+  width: 60%;
+  /* border-style: inset; */
+  /* padding-left: 10px; */
+  /* padding-right: 10px; */
+}
+
+fieldset {
+  width: 12em;
+}
+
+.textInput {
+  width: 100%;
+}
+
+i {
+  border: solid #2a5aa8;
+  border-width: 0 0.2em 0.2em 0;
+  display: inline-block;
+  padding: 0.4em;
+  /* background-color: grey; */
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+/* .arrowContainer {
+  border:1px solid black;
+  padding: 1px;
+} */
+
+td {
+  padding: 10px;
+  overflow-wrap: break-word;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #dddddd;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+table {
+  border-collapse: separate;
+  border: 3px solid #ffffff;
+  border-collapse: separate;
+  border-radius: 10px;
+  border-spacing: 0px;
+}
+
+#tableHeaderRow {
+  background: #2a5aa8;
+}
+
+#tableHeaderCell {
+  color: white;
+}
+
+button {
+  border-radius: 7px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.errorShaking {
+  animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  color: red;
+  border-color: red;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.pulse {
+  animation: shadow-pulse 0.7s 2;
+}
+
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 15px rgba(0, 0, 255, 0);
+  }
+}
