@@ -20,9 +20,12 @@
     const items = fileLines
       .map(fileLine => new VariableItem(keyTypes, fileLine))
       .filter(item => {
-      // Every key in each item must not be null
-      return Object.keys(item).every(key => item[key] !== null);
-    });
+        // Every key in each item must not be null
+        const passed = Object.keys(item).every(key => item[key] !== null);
+        if (!passed)
+          console.error(`Did not insert item: ${JSON.stringify(item)}`);
+        return passed;
+      });
 
     // Store keyTypeArr and itemArr in session storage:
     sessionSet(env.STORAGE_KEY_TYPES_KEY, keyTypes);
