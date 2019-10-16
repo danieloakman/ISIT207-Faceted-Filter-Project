@@ -372,7 +372,7 @@ function updateFilterValues (filterIndex) {
             checkbox.className += ' pulse';
             setTimeout(() => {
               checkbox.className = checkbox.className.replace(/ *pulse/i, '');
-            }, 1500);
+            }, 1300);
           });
         break;
       case 'Description':
@@ -381,7 +381,7 @@ function updateFilterValues (filterIndex) {
         textInput.className += ' pulse';
         setTimeout(() => {
           textInput.className = textInput.className.replace(/ *pulse/i, '');
-        }, 1500);
+        }, 1300);
         break;
       case 'Number':
         ['lowerBound', 'upperBound'].forEach(boundKey => {
@@ -392,7 +392,7 @@ function updateFilterValues (filterIndex) {
             bound.className += ' pulse';
             setTimeout(() => {
               bound.className = bound.className.replace(/ *pulse/i, '');
-            }, 1500);
+            }, 1300);
           }
         });
         break;

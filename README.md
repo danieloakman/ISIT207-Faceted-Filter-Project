@@ -7,3 +7,4 @@
 Needs to be hosted on a server. Can host a local server with the following options:
 - Python 2: `python -m SimpleHTTPServer`
 - Python 3: `python -m http.server`
+- vscode "Live Server" extension: press the "Go Live" button in the bottom right

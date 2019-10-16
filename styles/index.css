@@ -127,7 +127,7 @@ button {
 }
 
 .pulse {
-  animation: shadow-pulse 0.7s 2;
+  animation: shadow-pulse 1.25s 1;
 }
 
 @keyframes shadow-pulse {
